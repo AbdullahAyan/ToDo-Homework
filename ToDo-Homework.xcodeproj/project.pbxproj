@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D59EA0C28FB0A8E00E6EAC8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA0B28FB0A8E00E6EAC8 /* DetailViewController.swift */; };
+		3D59EA1528FB0AC100E6EAC8 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA1128FB0AC100E6EAC8 /* AddTaskViewController.swift */; };
+		3D59EA1E28FB0B3F00E6EAC8 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA1D28FB0B3F00E6EAC8 /* MainProtocols.swift */; };
+		3D59EA2028FB11E700E6EAC8 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA1F28FB11E700E6EAC8 /* MainInteractor.swift */; };
+		3D59EA2228FB1AA100E6EAC8 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA2128FB1AA100E6EAC8 /* MainPresenter.swift */; };
+		3D59EA2428FB1C1C00E6EAC8 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA2328FB1C1C00E6EAC8 /* MainRouter.swift */; };
+		3D59EA2628FB230800E6EAC8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA2528FB230800E6EAC8 /* TableViewCell.swift */; };
 		3DC108A328FAF21E00089FC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A228FAF21E00089FC0 /* AppDelegate.swift */; };
 		3DC108A528FAF21E00089FC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A428FAF21E00089FC0 /* SceneDelegate.swift */; };
 		3DC108A728FAF21E00089FC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A628FAF21E00089FC0 /* MainViewController.swift */; };
@@ -19,11 +26,16 @@
 		3DC108C828FAF39500089FC0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108BF28FAF39200089FC0 /* FMDatabasePool.m */; };
 		3DC108C928FAF39500089FC0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108C028FAF39300089FC0 /* FMDatabase.m */; };
 		3DC108CB28FAF42C00089FC0 /* toDo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3DC108CA28FAF42C00089FC0 /* toDo.sqlite */; };
-		3DC108CD28FB05B300089FC0 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108CC28FB05B300089FC0 /* AddTaskViewController.swift */; };
-		3DC108CF28FB05DC00089FC0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108CE28FB05DC00089FC0 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D59EA0B28FB0A8E00E6EAC8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3D59EA1128FB0AC100E6EAC8 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		3D59EA1D28FB0B3F00E6EAC8 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		3D59EA1F28FB11E700E6EAC8 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		3D59EA2128FB1AA100E6EAC8 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		3D59EA2328FB1C1C00E6EAC8 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		3D59EA2528FB230800E6EAC8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3DC1089F28FAF21E00089FC0 /* ToDo-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC108A228FAF21E00089FC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC108A428FAF21E00089FC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,8 +58,6 @@
 		3DC108C328FAF39400089FC0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		3DC108C428FAF39400089FC0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		3DC108CA28FAF42C00089FC0 /* toDo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = toDo.sqlite; sourceTree = SOURCE_ROOT; };
-		3DC108CC28FB05B300089FC0 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
-		3DC108CE28FB05DC00089FC0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D59EA0D28FB0AC100E6EAC8 /* AddTask-Module */ = {
+			isa = PBXGroup;
+			children = (
+				3D59EA0E28FB0AC100E6EAC8 /* Entity */,
+				3D59EA0F28FB0AC100E6EAC8 /* Presenter */,
+				3D59EA1028FB0AC100E6EAC8 /* View */,
+				3D59EA1228FB0AC100E6EAC8 /* Protocols */,
+				3D59EA1328FB0AC100E6EAC8 /* Interactor */,
+				3D59EA1428FB0AC100E6EAC8 /* Router */,
+			);
+			path = "AddTask-Module";
+			sourceTree = "<group>";
+		};
+		3D59EA0E28FB0AC100E6EAC8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3D59EA0F28FB0AC100E6EAC8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3D59EA1028FB0AC100E6EAC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D59EA1128FB0AC100E6EAC8 /* AddTaskViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D59EA1228FB0AC100E6EAC8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3D59EA1328FB0AC100E6EAC8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3D59EA1428FB0AC100E6EAC8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3D59EA1628FB0ADE00E6EAC8 /* Detail-Module */ = {
+			isa = PBXGroup;
+			children = (
+				3D59EA1728FB0ADE00E6EAC8 /* Entity */,
+				3D59EA1828FB0ADE00E6EAC8 /* Presenter */,
+				3D59EA1928FB0ADE00E6EAC8 /* View */,
+				3D59EA1A28FB0ADE00E6EAC8 /* Protocols */,
+				3D59EA1B28FB0ADE00E6EAC8 /* Interactor */,
+				3D59EA1C28FB0ADE00E6EAC8 /* Router */,
+			);
+			path = "Detail-Module";
+			sourceTree = "<group>";
+		};
+		3D59EA1728FB0ADE00E6EAC8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3D59EA1828FB0ADE00E6EAC8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3D59EA1928FB0ADE00E6EAC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D59EA0B28FB0A8E00E6EAC8 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D59EA1A28FB0ADE00E6EAC8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3D59EA1B28FB0ADE00E6EAC8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3D59EA1C28FB0ADE00E6EAC8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		3DC1089628FAF21E00089FC0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,16 +203,16 @@
 		3DC108A128FAF21E00089FC0 /* ToDo-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				3D59EA1628FB0ADE00E6EAC8 /* Detail-Module */,
+				3D59EA0D28FB0AC100E6EAC8 /* AddTask-Module */,
+				3DC108D028FB089100089FC0 /* Main-Module */,
 				3DC108A228FAF21E00089FC0 /* AppDelegate.swift */,
-				3DC108A428FAF21E00089FC0 /* SceneDelegate.swift */,
-				3DC108A628FAF21E00089FC0 /* MainViewController.swift */,
 				3DC108A828FAF21E00089FC0 /* Main.storyboard */,
+				3DC108A428FAF21E00089FC0 /* SceneDelegate.swift */,
 				3DC108AB28FAF22000089FC0 /* Assets.xcassets */,
 				3DC108AD28FAF22000089FC0 /* LaunchScreen.storyboard */,
 				3DC108B028FAF22000089FC0 /* Info.plist */,
 				3DC108B828FAF37E00089FC0 /* Database Files */,
-				3DC108CC28FB05B300089FC0 /* AddTaskViewController.swift */,
-				3DC108CE28FB05DC00089FC0 /* DetailViewController.swift */,
 			);
 			path = "ToDo-Homework";
 			sourceTree = "<group>";
@@ -121,6 +243,67 @@
 				3DC108B928FAF38F00089FC0 /* ToDo-Homework-Bridging-Header.h */,
 			);
 			path = "Database Files";
+			sourceTree = "<group>";
+		};
+		3DC108D028FB089100089FC0 /* Main-Module */ = {
+			isa = PBXGroup;
+			children = (
+				3DC108D228FB08C200089FC0 /* Protocols */,
+				3DC108D628FB08F900089FC0 /* Presenter */,
+				3DC108D528FB08DF00089FC0 /* Router */,
+				3DC108D428FB08D500089FC0 /* View */,
+				3DC108D328FB08C900089FC0 /* Entity */,
+				3DC108D128FB08B500089FC0 /* Interactor */,
+			);
+			path = "Main-Module";
+			sourceTree = "<group>";
+		};
+		3DC108D128FB08B500089FC0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3D59EA1F28FB11E700E6EAC8 /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3DC108D228FB08C200089FC0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3D59EA1D28FB0B3F00E6EAC8 /* MainProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3DC108D328FB08C900089FC0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3DC108D428FB08D500089FC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DC108A628FAF21E00089FC0 /* MainViewController.swift */,
+				3D59EA2528FB230800E6EAC8 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DC108D528FB08DF00089FC0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3D59EA2328FB1C1C00E6EAC8 /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3DC108D628FB08F900089FC0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3D59EA2128FB1AA100E6EAC8 /* MainPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,16 +379,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D59EA2628FB230800E6EAC8 /* TableViewCell.swift in Sources */,
+				3D59EA0C28FB0A8E00E6EAC8 /* DetailViewController.swift in Sources */,
+				3D59EA2428FB1C1C00E6EAC8 /* MainRouter.swift in Sources */,
 				3DC108C728FAF39500089FC0 /* FMResultSet.m in Sources */,
+				3D59EA1E28FB0B3F00E6EAC8 /* MainProtocols.swift in Sources */,
 				3DC108A728FAF21E00089FC0 /* MainViewController.swift in Sources */,
 				3DC108C528FAF39500089FC0 /* FMDatabaseQueue.m in Sources */,
 				3DC108A328FAF21E00089FC0 /* AppDelegate.swift in Sources */,
+				3D59EA2228FB1AA100E6EAC8 /* MainPresenter.swift in Sources */,
 				3DC108C828FAF39500089FC0 /* FMDatabasePool.m in Sources */,
 				3DC108A528FAF21E00089FC0 /* SceneDelegate.swift in Sources */,
 				3DC108C628FAF39500089FC0 /* FMDatabaseAdditions.m in Sources */,
-				3DC108CF28FB05DC00089FC0 /* DetailViewController.swift in Sources */,
-				3DC108CD28FB05B300089FC0 /* AddTaskViewController.swift in Sources */,
 				3DC108C928FAF39500089FC0 /* FMDatabase.m in Sources */,
+				3D59EA1528FB0AC100E6EAC8 /* AddTaskViewController.swift in Sources */,
+				3D59EA2028FB11E700E6EAC8 /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
-        let vc = (storyboard?.instantiateViewController(withIdentifier: "AddTask"))!
+        let vc = (storyboard?.instantiateViewController(withIdentifier: "Add"))!
         navigationController?.pushViewController(vc, animated: true)
     }
     

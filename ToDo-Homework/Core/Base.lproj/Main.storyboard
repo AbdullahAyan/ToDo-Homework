@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="936.92307692307691" y="3.5545023696682461"/>
         </scene>
-        <!--Add Task View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="dEg-56-pgo">
             <objects>
-                <viewController storyboardIdentifier="AddTask" title="Add Task View Controller" id="nEM-lx-AfC" customClass="AddTaskViewController" customModule="ToDo_Homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Add" title="Add View Controller" id="nEM-lx-AfC" customClass="AddViewController" customModule="ToDo_Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8pb-Xf-9nf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,9 +100,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rm-Sf-iDT">
-                                <rect key="frame" x="172" y="407" width="46" height="30"/>
+                                <rect key="frame" x="180" y="407" width="30" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="nEM-lx-AfC" eventType="touchUpInside" id="y9c-bG-6fI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="73a-Rl-Ub7"/>
@@ -115,6 +118,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yapılacak İş Kayıt" id="HDL-1e-AJn"/>
+                    <connections>
+                        <outlet property="textField" destination="RaO-bf-6v4" id="CMA-ZN-30l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXj-YT-kjY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

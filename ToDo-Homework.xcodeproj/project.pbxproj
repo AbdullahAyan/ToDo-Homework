@@ -18,6 +18,10 @@
 		3D59EA2B28FB35F700E6EAC8 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA2A28FB35F700E6EAC8 /* AddPresenter.swift */; };
 		3D59EA2D28FB376200E6EAC8 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA2C28FB376200E6EAC8 /* AddInteractor.swift */; };
 		3D59EA2F28FB37A600E6EAC8 /* AddRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA2E28FB37A600E6EAC8 /* AddRouter.swift */; };
+		3D59EA3128FB3A1000E6EAC8 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA3028FB3A1000E6EAC8 /* DetailProtocols.swift */; };
+		3D59EA3328FB3B6800E6EAC8 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA3228FB3B6800E6EAC8 /* DetailPresenter.swift */; };
+		3D59EA3528FB3BFF00E6EAC8 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA3428FB3BFF00E6EAC8 /* DetailInteractor.swift */; };
+		3D59EA3728FB3C4500E6EAC8 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59EA3628FB3C4500E6EAC8 /* DetailRouter.swift */; };
 		3DC108A328FAF21E00089FC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A228FAF21E00089FC0 /* AppDelegate.swift */; };
 		3DC108A528FAF21E00089FC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A428FAF21E00089FC0 /* SceneDelegate.swift */; };
 		3DC108A728FAF21E00089FC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A628FAF21E00089FC0 /* MainViewController.swift */; };
@@ -44,6 +48,10 @@
 		3D59EA2A28FB35F700E6EAC8 /* AddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
 		3D59EA2C28FB376200E6EAC8 /* AddInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
 		3D59EA2E28FB37A600E6EAC8 /* AddRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRouter.swift; sourceTree = "<group>"; };
+		3D59EA3028FB3A1000E6EAC8 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		3D59EA3228FB3B6800E6EAC8 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		3D59EA3428FB3BFF00E6EAC8 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		3D59EA3628FB3C4500E6EAC8 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		3DC1089F28FAF21E00089FC0 /* ToDo-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC108A228FAF21E00089FC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC108A428FAF21E00089FC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +161,7 @@
 		3D59EA1828FB0ADE00E6EAC8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				3D59EA3228FB3B6800E6EAC8 /* DetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 		3D59EA1A28FB0ADE00E6EAC8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				3D59EA3028FB3A1000E6EAC8 /* DetailProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -175,6 +185,7 @@
 		3D59EA1B28FB0ADE00E6EAC8 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				3D59EA3428FB3BFF00E6EAC8 /* DetailInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -182,6 +193,7 @@
 		3D59EA1C28FB0ADE00E6EAC8 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				3D59EA3628FB3C4500E6EAC8 /* DetailRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -388,12 +400,15 @@
 				3D59EA2428FB1C1C00E6EAC8 /* MainRouter.swift in Sources */,
 				3DC108C728FAF39500089FC0 /* FMResultSet.m in Sources */,
 				3D59EA1E28FB0B3F00E6EAC8 /* MainProtocols.swift in Sources */,
+				3D59EA3328FB3B6800E6EAC8 /* DetailPresenter.swift in Sources */,
 				3DC108A728FAF21E00089FC0 /* MainViewController.swift in Sources */,
 				3DC108C528FAF39500089FC0 /* FMDatabaseQueue.m in Sources */,
 				3DC108A328FAF21E00089FC0 /* AppDelegate.swift in Sources */,
+				3D59EA3128FB3A1000E6EAC8 /* DetailProtocols.swift in Sources */,
 				3D59EA2B28FB35F700E6EAC8 /* AddPresenter.swift in Sources */,
 				3D59EA2228FB1AA100E6EAC8 /* MainPresenter.swift in Sources */,
 				3DC108C828FAF39500089FC0 /* FMDatabasePool.m in Sources */,
+				3D59EA3728FB3C4500E6EAC8 /* DetailRouter.swift in Sources */,
 				3DC108A528FAF21E00089FC0 /* SceneDelegate.swift in Sources */,
 				3D59EA2828FB329700E6EAC8 /* AddProtocols.swift in Sources */,
 				3DC108C628FAF39500089FC0 /* FMDatabaseAdditions.m in Sources */,
@@ -401,6 +416,7 @@
 				3D59EA2D28FB376200E6EAC8 /* AddInteractor.swift in Sources */,
 				3DC108C928FAF39500089FC0 /* FMDatabase.m in Sources */,
 				3D59EA1528FB0AC100E6EAC8 /* AddViewController.swift in Sources */,
+				3D59EA3528FB3BFF00E6EAC8 /* DetailInteractor.swift in Sources */,
 				3D59EA2028FB11E700E6EAC8 /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,8 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        AddRouter.createModule(viewController: self)
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {

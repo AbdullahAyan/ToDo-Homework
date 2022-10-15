@@ -102,7 +102,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rm-Sf-iDT">
                                 <rect key="frame" x="180" y="407" width="30" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Ekle"/>
                                 <connections>
                                     <action selector="addButtonTapped:" destination="nEM-lx-AfC" eventType="touchUpInside" id="y9c-bG-6fI"/>
                                 </connections>
@@ -153,9 +153,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgq-51-rIu">
-                                <rect key="frame" x="172" y="407" width="46" height="30"/>
+                                <rect key="frame" x="165" y="407" width="60" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Güncelle"/>
+                                <connections>
+                                    <action selector="updateButtonTapped:" destination="ojM-HD-4O0" eventType="touchUpInside" id="k3g-TP-fAN"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ge-cM-NOw">
                                 <rect key="frame" x="115" y="277" width="160" height="80"/>
@@ -177,6 +180,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yapılacak İş Detay" id="wFX-mw-Cdj"/>
+                    <connections>
+                        <outlet property="textField" destination="8Ge-cM-NOw" id="nSL-nN-t52"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRO-h9-g1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

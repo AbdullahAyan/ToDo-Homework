@@ -20,8 +20,19 @@ class MainViewController: UIViewController {
         tableView.delegate = self
     }
 
-
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+        
+        let vc = (storyboard?.instantiateViewController(withIdentifier: "AddTask"))!
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
 }
+
+
+
+
 
 //MARK: - SearchBar Delegate
 

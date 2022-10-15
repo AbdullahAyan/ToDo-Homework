@@ -64,7 +64,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yapılacaklar" id="sxj-6u-blw">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yfq-M0-Plj"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yfq-M0-Plj">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="BYZ-38-t0r" id="g8P-we-XoL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="Ada-MB-8cz" id="HmJ-UQ-8OW"/>
@@ -75,21 +79,43 @@
             </objects>
             <point key="canvasLocation" x="936.92307692307691" y="3.5545023696682461"/>
         </scene>
-        <!--Yapılacak İş Kayıt-->
+        <!--Add Task View Controller-->
         <scene sceneID="dEg-56-pgo">
             <objects>
-                <viewController id="nEM-lx-AfC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddTask" title="Add Task View Controller" id="nEM-lx-AfC" customClass="AddTaskViewController" customModule="ToDo_Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8pb-Xf-9nf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaO-bf-6v4">
+                                <rect key="frame" x="115" y="274.66666666666669" width="160" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Zp9-kw-BNb"/>
+                                    <constraint firstAttribute="height" constant="80" id="vhw-yg-tze"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rm-Sf-iDT">
+                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="73a-Rl-Ub7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9rm-Sf-iDT" firstAttribute="top" secondItem="RaO-bf-6v4" secondAttribute="bottom" constant="50" id="8aR-uQ-8WK"/>
+                            <constraint firstItem="9rm-Sf-iDT" firstAttribute="centerX" secondItem="RaO-bf-6v4" secondAttribute="centerX" id="BlU-VX-Yqw"/>
+                            <constraint firstItem="9rm-Sf-iDT" firstAttribute="centerY" secondItem="8pb-Xf-9nf" secondAttribute="centerY" id="cmQ-n0-5me"/>
+                            <constraint firstItem="9rm-Sf-iDT" firstAttribute="centerX" secondItem="8pb-Xf-9nf" secondAttribute="centerX" id="ps3-ai-Swk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yapılacak İş Kayıt" id="HDL-1e-AJn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXj-YT-kjY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="-289"/>
+            <point key="canvasLocation" x="1721.5384615384614" y="-289.33649289099526"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1dd-P9-MN0">
@@ -109,21 +135,43 @@
             </objects>
             <point key="canvasLocation" x="7.6923076923076916" y="3.5545023696682461"/>
         </scene>
-        <!--Yapılacak İş Detay-->
+        <!--Detail View Controller-->
         <scene sceneID="q5O-TJ-jMk">
             <objects>
-                <viewController id="ojM-HD-4O0" sceneMemberID="viewController">
+                <viewController title="Detail View Controller" id="ojM-HD-4O0" customClass="DetailViewController" customModule="ToDo_Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rl6-IO-Kon">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgq-51-rIu">
+                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ge-cM-NOw">
+                                <rect key="frame" x="115" y="274.66666666666669" width="160" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="bOZ-rd-OjD"/>
+                                    <constraint firstAttribute="height" constant="80" id="wn0-sG-vCb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="t3i-27-M6N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wgq-51-rIu" firstAttribute="centerY" secondItem="Rl6-IO-Kon" secondAttribute="centerY" id="9rQ-6E-ZBN"/>
+                            <constraint firstItem="Wgq-51-rIu" firstAttribute="centerX" secondItem="Rl6-IO-Kon" secondAttribute="centerX" id="FlT-Gl-469"/>
+                            <constraint firstItem="Wgq-51-rIu" firstAttribute="top" secondItem="8Ge-cM-NOw" secondAttribute="bottom" constant="50" id="jK2-KZ-gXs"/>
+                            <constraint firstItem="Wgq-51-rIu" firstAttribute="centerX" secondItem="8Ge-cM-NOw" secondAttribute="centerX" id="lBm-AA-rGt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yapılacak İş Detay" id="wFX-mw-Cdj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRO-h9-g1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1722" y="454"/>
+            <point key="canvasLocation" x="1721.5384615384614" y="453.55450236966823"/>
         </scene>
     </scenes>
     <resources>

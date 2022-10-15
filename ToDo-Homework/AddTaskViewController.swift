@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddTaskViewController: UINavigationController {
+class AddTaskViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

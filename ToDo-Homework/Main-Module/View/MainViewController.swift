@@ -16,6 +16,8 @@ class MainViewController: UIViewController {
     var mainPresenter: ViewToPresenterMainProtocol?
     
     var tasks = [String]()
+    var tempTasks = [String]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,7 @@ class MainViewController: UIViewController {
         MainRouter.createModule(viewController: self)
         
         mainPresenter?.showTask()
+        tempTasks = tasks
         
     }
 
@@ -54,6 +57,25 @@ extension MainViewController: PresenterToViewMainProtocol {
 extension MainViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
+        if searchText == "" {
+            
+            tasks = tempTasks
+            
+        }else {
+            
+            tasks.removeAll()
+            
+            for task in tempTasks {
+                if task.lowercased().contains(searchText.lowercased()) {
+                    tasks.append(task)
+                }
+            }
+            
+        }
+        
+        self.tableView.reloadData()
+
+        
     }
 }
 
@@ -75,5 +97,12 @@ extension MainViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
+        vc.task = tasks[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

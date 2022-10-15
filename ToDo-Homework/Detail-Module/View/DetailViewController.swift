@@ -9,13 +9,15 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var task = ""
+    
     @IBOutlet weak var textField: UITextField!
     
     var presenter: ViewToPresenterDetailProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        textField.text = task
         DetailRouter.createModule(viewController: self)
     }
 

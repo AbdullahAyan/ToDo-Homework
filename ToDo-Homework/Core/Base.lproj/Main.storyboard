@@ -96,7 +96,7 @@
                                     <constraint firstAttribute="width" constant="160" id="Zp9-kw-BNb"/>
                                     <constraint firstAttribute="height" constant="80" id="vhw-yg-tze"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rm-Sf-iDT">
@@ -147,7 +147,7 @@
         <!--Detail View Controller-->
         <scene sceneID="q5O-TJ-jMk">
             <objects>
-                <viewController title="Detail View Controller" id="ojM-HD-4O0" customClass="DetailViewController" customModule="ToDo_Homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detail" title="Detail View Controller" id="ojM-HD-4O0" customClass="DetailViewController" customModule="ToDo_Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rl6-IO-Kon">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,13 +160,13 @@
                                     <action selector="updateButtonTapped:" destination="ojM-HD-4O0" eventType="touchUpInside" id="k3g-TP-fAN"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ge-cM-NOw">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Ge-cM-NOw">
                                 <rect key="frame" x="115" y="277" width="160" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="bOZ-rd-OjD"/>
                                     <constraint firstAttribute="height" constant="80" id="wn0-sG-vCb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>

@@ -9,21 +9,45 @@
 /* Begin PBXBuildFile section */
 		3DC108A328FAF21E00089FC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A228FAF21E00089FC0 /* AppDelegate.swift */; };
 		3DC108A528FAF21E00089FC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A428FAF21E00089FC0 /* SceneDelegate.swift */; };
-		3DC108A728FAF21E00089FC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A628FAF21E00089FC0 /* ViewController.swift */; };
+		3DC108A728FAF21E00089FC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108A628FAF21E00089FC0 /* MainViewController.swift */; };
 		3DC108AA28FAF21E00089FC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC108A828FAF21E00089FC0 /* Main.storyboard */; };
 		3DC108AC28FAF22000089FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC108AB28FAF22000089FC0 /* Assets.xcassets */; };
 		3DC108AF28FAF22000089FC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC108AD28FAF22000089FC0 /* LaunchScreen.storyboard */; };
+		3DC108C528FAF39500089FC0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108BC28FAF39100089FC0 /* FMDatabaseQueue.m */; };
+		3DC108C628FAF39500089FC0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108BD28FAF39100089FC0 /* FMDatabaseAdditions.m */; };
+		3DC108C728FAF39500089FC0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108BE28FAF39200089FC0 /* FMResultSet.m */; };
+		3DC108C828FAF39500089FC0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108BF28FAF39200089FC0 /* FMDatabasePool.m */; };
+		3DC108C928FAF39500089FC0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108C028FAF39300089FC0 /* FMDatabase.m */; };
+		3DC108CB28FAF42C00089FC0 /* toDo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3DC108CA28FAF42C00089FC0 /* toDo.sqlite */; };
+		3DC108CD28FB05B300089FC0 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108CC28FB05B300089FC0 /* AddTaskViewController.swift */; };
+		3DC108CF28FB05DC00089FC0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108CE28FB05DC00089FC0 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DC1089F28FAF21E00089FC0 /* ToDo-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC108A228FAF21E00089FC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC108A428FAF21E00089FC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DC108A628FAF21E00089FC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DC108A628FAF21E00089FC0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3DC108A928FAF21E00089FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DC108AB28FAF22000089FC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC108AE28FAF22000089FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC108B028FAF22000089FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC108B728FAF36400089FC0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3DC108B928FAF38F00089FC0 /* ToDo-Homework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDo-Homework-Bridging-Header.h"; sourceTree = "<group>"; };
+		3DC108BA28FAF39000089FC0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		3DC108BB28FAF39100089FC0 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		3DC108BC28FAF39100089FC0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		3DC108BD28FAF39100089FC0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		3DC108BE28FAF39200089FC0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		3DC108BF28FAF39200089FC0 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		3DC108C028FAF39300089FC0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		3DC108C128FAF39300089FC0 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		3DC108C228FAF39400089FC0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		3DC108C328FAF39400089FC0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		3DC108C428FAF39400089FC0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		3DC108CA28FAF42C00089FC0 /* toDo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = toDo.sqlite; sourceTree = SOURCE_ROOT; };
+		3DC108CC28FB05B300089FC0 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		3DC108CE28FB05DC00089FC0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +66,7 @@
 			children = (
 				3DC108A128FAF21E00089FC0 /* ToDo-Homework */,
 				3DC108A028FAF21E00089FC0 /* Products */,
+				3DC108B628FAF36300089FC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +83,44 @@
 			children = (
 				3DC108A228FAF21E00089FC0 /* AppDelegate.swift */,
 				3DC108A428FAF21E00089FC0 /* SceneDelegate.swift */,
-				3DC108A628FAF21E00089FC0 /* ViewController.swift */,
+				3DC108A628FAF21E00089FC0 /* MainViewController.swift */,
 				3DC108A828FAF21E00089FC0 /* Main.storyboard */,
 				3DC108AB28FAF22000089FC0 /* Assets.xcassets */,
 				3DC108AD28FAF22000089FC0 /* LaunchScreen.storyboard */,
 				3DC108B028FAF22000089FC0 /* Info.plist */,
+				3DC108B828FAF37E00089FC0 /* Database Files */,
+				3DC108CC28FB05B300089FC0 /* AddTaskViewController.swift */,
+				3DC108CE28FB05DC00089FC0 /* DetailViewController.swift */,
 			);
 			path = "ToDo-Homework";
+			sourceTree = "<group>";
+		};
+		3DC108B628FAF36300089FC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DC108B728FAF36400089FC0 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DC108B828FAF37E00089FC0 /* Database Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC108CA28FAF42C00089FC0 /* toDo.sqlite */,
+				3DC108C228FAF39400089FC0 /* FMDatabase.h */,
+				3DC108C028FAF39300089FC0 /* FMDatabase.m */,
+				3DC108C328FAF39400089FC0 /* FMDatabaseAdditions.h */,
+				3DC108BD28FAF39100089FC0 /* FMDatabaseAdditions.m */,
+				3DC108C128FAF39300089FC0 /* FMDatabasePool.h */,
+				3DC108BF28FAF39200089FC0 /* FMDatabasePool.m */,
+				3DC108BA28FAF39000089FC0 /* FMDatabaseQueue.h */,
+				3DC108BC28FAF39100089FC0 /* FMDatabaseQueue.m */,
+				3DC108BB28FAF39100089FC0 /* FMDB.h */,
+				3DC108C428FAF39400089FC0 /* FMResultSet.h */,
+				3DC108BE28FAF39200089FC0 /* FMResultSet.m */,
+				3DC108B928FAF38F00089FC0 /* ToDo-Homework-Bridging-Header.h */,
+			);
+			path = "Database Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +155,7 @@
 				TargetAttributes = {
 					3DC1089E28FAF21E00089FC0 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -126,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC108AF28FAF22000089FC0 /* LaunchScreen.storyboard in Resources */,
+				3DC108CB28FAF42C00089FC0 /* toDo.sqlite in Resources */,
 				3DC108AC28FAF22000089FC0 /* Assets.xcassets in Resources */,
 				3DC108AA28FAF21E00089FC0 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +196,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC108A728FAF21E00089FC0 /* ViewController.swift in Sources */,
+				3DC108C728FAF39500089FC0 /* FMResultSet.m in Sources */,
+				3DC108A728FAF21E00089FC0 /* MainViewController.swift in Sources */,
+				3DC108C528FAF39500089FC0 /* FMDatabaseQueue.m in Sources */,
 				3DC108A328FAF21E00089FC0 /* AppDelegate.swift in Sources */,
+				3DC108C828FAF39500089FC0 /* FMDatabasePool.m in Sources */,
 				3DC108A528FAF21E00089FC0 /* SceneDelegate.swift in Sources */,
+				3DC108C628FAF39500089FC0 /* FMDatabaseAdditions.m in Sources */,
+				3DC108CF28FB05DC00089FC0 /* DetailViewController.swift in Sources */,
+				3DC108CD28FB05B300089FC0 /* AddTaskViewController.swift in Sources */,
+				3DC108C928FAF39500089FC0 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TU2682LVXY;
@@ -295,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +370,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahayan.ToDo-Homework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDo-Homework/Database Files/ToDo-Homework-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TU2682LVXY;
@@ -323,6 +393,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahayan.ToDo-Homework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDo-Homework/Database Files/ToDo-Homework-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

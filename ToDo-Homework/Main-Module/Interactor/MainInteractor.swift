@@ -11,6 +11,7 @@ class MainInteractor: PresenterToInteractorMainProtocol {
     var mainPresenter: InteractorToPresenterMainProtocol?
     
     var tasks = ["Homework","Exercise"]
+
     
     func showTasks() {
         mainPresenter?.sendDataToPresenter(tasks: tasks)
@@ -22,12 +23,15 @@ class MainInteractor: PresenterToInteractorMainProtocol {
     
     func searchTask(searchText: String) {
         
+        var tempTasks = [String]()
+        
         for task in tasks {
             if task.lowercased().contains(searchText.lowercased()) {
-                tasks.append(task)
+                tempTasks.append(task)
             }
         }
         
+        mainPresenter?.sendDataToPresenter(tasks: tempTasks)
     }
     
     

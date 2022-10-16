@@ -26,4 +26,5 @@ class DetailViewController: UIViewController {
         
         presenter?.updateTask(yapilacak_id: task.yapilacak_id, yapilacak_is: textField.text!)
     }
+    
 }

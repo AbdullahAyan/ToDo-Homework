@@ -12,12 +12,12 @@ protocol ViewToPresenterAddProtocol {
     var addView: AddViewController? {get set}
     var addInteractor: PresenterToInteractorAddProtocol? {get set}
     
-    func addTask(task: String)
+    func addTask(yapilacak_is: String)
 }
 
 protocol PresenterToInteractorAddProtocol {
     
-    func addTask(task: String)
+    func addTask(yapilacak_is: String)
 }
 
 

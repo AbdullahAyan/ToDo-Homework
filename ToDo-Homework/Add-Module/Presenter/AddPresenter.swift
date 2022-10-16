@@ -12,8 +12,8 @@ class AddPresenter:ViewToPresenterAddProtocol {
     
     var addInteractor: PresenterToInteractorAddProtocol?
     
-    func addTask(task: String) {
-        addInteractor?.addTask(task: task)
+    func addTask(yapilacak_is: String) {
+        addInteractor?.addTask(yapilacak_is: yapilacak_is)
     }
     
     

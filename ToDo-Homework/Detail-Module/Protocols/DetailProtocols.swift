@@ -12,12 +12,12 @@ protocol ViewToPresenterDetailProtocol {
     var detailView: DetailViewController? {get set}
     var detailInteractor: PresenterToInteractorDetailProtocol? {get set}
     
-    func updateTask(task: String)
+    func updateTask(yapilacak_id: String,yapilacak_is: String)
 }
 
 protocol PresenterToInteractorDetailProtocol {
     
-    func updateTask(task: String)
+    func updateTask(yapilacak_id: String,yapilacak_is: String)
 }
 
 

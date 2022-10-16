@@ -21,7 +21,7 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
-        addPresenter?.addTask(task: textField.text!)
+        addPresenter?.addTask(yapilacak_is: textField.text!)
     }
     
 

@@ -33,7 +33,8 @@
 		3DC108C728FAF39500089FC0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108BE28FAF39200089FC0 /* FMResultSet.m */; };
 		3DC108C828FAF39500089FC0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108BF28FAF39200089FC0 /* FMDatabasePool.m */; };
 		3DC108C928FAF39500089FC0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC108C028FAF39300089FC0 /* FMDatabase.m */; };
-		3DC108CB28FAF42C00089FC0 /* toDo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3DC108CA28FAF42C00089FC0 /* toDo.sqlite */; };
+		3DEFFD6D28FC0B0A00B31852 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFFD6C28FC0B0A00B31852 /* Task.swift */; };
+		3DEFFD7328FC234900B31852 /* toDo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3DEFFD7228FC234900B31852 /* toDo.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +74,8 @@
 		3DC108C228FAF39400089FC0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		3DC108C328FAF39400089FC0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		3DC108C428FAF39400089FC0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		3DC108CA28FAF42C00089FC0 /* toDo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = toDo.sqlite; sourceTree = SOURCE_ROOT; };
+		3DEFFD6C28FC0B0A00B31852 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3DEFFD7228FC234900B31852 /* toDo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = toDo.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		3D59EA0E28FB0AC100E6EAC8 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				3DEFFD6C28FC0B0A00B31852 /* Task.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				3D59EA0D28FB0AC100E6EAC8 /* Add-Module */,
 				3DC108D028FB089100089FC0 /* Main-Module */,
 				3DC108B028FAF22000089FC0 /* Info.plist */,
+				3DEFFD7228FC234900B31852 /* toDo.sqlite */,
 				3DC108B828FAF37E00089FC0 /* Database Files */,
 			);
 			path = "ToDo-Homework";
@@ -252,7 +256,6 @@
 		3DC108B828FAF37E00089FC0 /* Database Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DC108CA28FAF42C00089FC0 /* toDo.sqlite */,
 				3DC108C228FAF39400089FC0 /* FMDatabase.h */,
 				3DC108C028FAF39300089FC0 /* FMDatabase.m */,
 				3DC108C328FAF39400089FC0 /* FMDatabaseAdditions.h */,
@@ -382,7 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC108AF28FAF22000089FC0 /* LaunchScreen.storyboard in Resources */,
-				3DC108CB28FAF42C00089FC0 /* toDo.sqlite in Resources */,
+				3DEFFD7328FC234900B31852 /* toDo.sqlite in Resources */,
 				3DC108AC28FAF22000089FC0 /* Assets.xcassets in Resources */,
 				3DC108AA28FAF21E00089FC0 /* Main.storyboard in Resources */,
 			);
@@ -411,6 +414,7 @@
 				3D59EA3728FB3C4500E6EAC8 /* DetailRouter.swift in Sources */,
 				3DC108A528FAF21E00089FC0 /* SceneDelegate.swift in Sources */,
 				3D59EA2828FB329700E6EAC8 /* AddProtocols.swift in Sources */,
+				3DEFFD6D28FC0B0A00B31852 /* Task.swift in Sources */,
 				3DC108C628FAF39500089FC0 /* FMDatabaseAdditions.m in Sources */,
 				3D59EA2F28FB37A600E6EAC8 /* AddRouter.swift in Sources */,
 				3D59EA2D28FB376200E6EAC8 /* AddInteractor.swift in Sources */,

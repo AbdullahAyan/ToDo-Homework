@@ -14,7 +14,7 @@ protocol ViewToPresenterMainProtocol {
     var mainInteractor: PresenterToInteractorMainProtocol? {get set}
     
     func showTasks()
-    func deleteTask()
+    func deleteTask(yapilacak_id: String)
     func searchTask(searchText: String)
 }
 
@@ -22,7 +22,7 @@ protocol PresenterToInteractorMainProtocol {
     var mainPresenter: InteractorToPresenterMainProtocol? {get set}
     
     func showTasks()
-    func deleteTask()
+    func deleteTask(yapilacak_id: String)
     func searchTask(searchText: String)
 }
 
@@ -30,11 +30,11 @@ protocol PresenterToInteractorMainProtocol {
 
 //MARK: - Transporter Protocols
 protocol InteractorToPresenterMainProtocol {
-    func sendDataToPresenter(tasks: Array<String>)
+    func sendDataToPresenter(tasks: Array<Task>)
 }
 
 protocol PresenterToViewMainProtocol {
-    func sendDataToView(tasks: Array<String>)
+    func sendDataToView(tasks: Array<Task>)
 }
 
 

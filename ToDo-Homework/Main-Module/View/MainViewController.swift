@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
 
     var mainPresenter: ViewToPresenterMainProtocol?
     
-    var tasks = [String]()
+    var tasks = [Task]()
 
     
     override func viewDidLoad() {
@@ -24,10 +24,14 @@ class MainViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        copyDatabase()
+        
         MainRouter.createModule(viewController: self)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         mainPresenter?.showTasks()
-        
     }
 
     @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
@@ -35,11 +39,30 @@ class MainViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+    func copyDatabase() {
+        let bundlePath = Bundle.main.path(forResource: "toDo", ofType: ".sqlite")!
+        let destinationPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let copyPath = URL(fileURLWithPath: destinationPath).appendingPathExtension("toDo.sqlite")
+        let fileManager = FileManager.default
+        
+        if fileManager.fileExists(atPath: copyPath.path) {
+            
+        }else {
+            do {
+                try fileManager.copyItem(atPath: bundlePath, toPath: copyPath.path)
+            }catch {
+                
+            }
+        }
+    }
+    
 }
 
 extension MainViewController: PresenterToViewMainProtocol {
-    func sendDataToView(tasks: Array<String>) {
+    func sendDataToView(tasks: Array<Task>) {
         self.tasks = tasks
+        self.tableView.reloadData()
     }
     
     
@@ -60,13 +83,7 @@ extension MainViewController: UISearchBarDelegate {
         }else {
             mainPresenter?.searchTask(searchText: searchText)
         }
-        
-        
-        
-        
         self.tableView.reloadData()
-
-        
     }
 }
 
@@ -81,13 +98,32 @@ extension MainViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
-        cell.label.text = tasks[indexPath.row]
+        cell.label.text = tasks[indexPath.row].yapilacak_is
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let deleteAction = UIContextualAction(style: .destructive, title: "Sil"){ (action,view,void) in
+            let task = self.tasks[indexPath.row]
+            
+            let alert = UIAlertController(title: "Silme İşlemi", message: "\(task.yapilacak_is) silinsin mi?", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "İptal", style: .cancel){ action in }
+            alert.addAction(cancelAction)
+            
+            let yesAction = UIAlertAction(title: "Evet", style: .destructive){ action in
+                self.mainPresenter?.deleteTask(yapilacak_id: task.yapilacak_id)
+            }
+            alert.addAction(yesAction)
+            self.present(alert, animated: true)
+        }
+        tableView.reloadData()
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
     
     

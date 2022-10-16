@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    var task = ""
+    var task = Task(yapilacak_id: "", yapilacak_is: "")
     
     @IBOutlet weak var textField: UITextField!
     
@@ -17,11 +17,13 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.text = task
+        textField.text = task.yapilacak_is
         DetailRouter.createModule(viewController: self)
     }
 
 
     @IBAction func updateButtonTapped(_ sender: Any) {
+        
+        presenter?.updateTask(yapilacak_id: task.yapilacak_id, yapilacak_is: textField.text!)
     }
 }

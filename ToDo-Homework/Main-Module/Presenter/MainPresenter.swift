@@ -17,8 +17,8 @@ class MainPresenter: ViewToPresenterMainProtocol {
         mainInteractor?.showTasks()
     }
     
-    func deleteTask() {
-        mainInteractor?.deleteTask()
+    func deleteTask(yapilacak_id: String) {
+        mainInteractor?.deleteTask(yapilacak_id: yapilacak_id)
     }
     
     func searchTask(searchText: String) {
@@ -29,7 +29,7 @@ class MainPresenter: ViewToPresenterMainProtocol {
 }
 
 extension MainPresenter: InteractorToPresenterMainProtocol {
-    func sendDataToPresenter(tasks: Array<String>) {
+    func sendDataToPresenter(tasks: Array<Task>) {
         mainView?.sendDataToView(tasks: tasks)
     }
         

@@ -12,8 +12,8 @@ class DetailPresenter: ViewToPresenterDetailProtocol {
     
     var detailInteractor: PresenterToInteractorDetailProtocol?
     
-    func updateTask(task: String) {
-        detailInteractor?.updateTask(task: task)
+    func updateTask(yapilacak_id: String,yapilacak_is: String) {
+        detailInteractor?.updateTask(yapilacak_id: yapilacak_id,yapilacak_is: yapilacak_is)
     }
     
     

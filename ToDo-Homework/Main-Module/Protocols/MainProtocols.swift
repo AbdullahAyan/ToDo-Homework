@@ -13,17 +13,17 @@ protocol ViewToPresenterMainProtocol {
     var mainView: PresenterToViewMainProtocol? {get set}
     var mainInteractor: PresenterToInteractorMainProtocol? {get set}
     
-    func showTask()
+    func showTasks()
     func deleteTask()
-    func searchTask()
+    func searchTask(searchText: String)
 }
 
 protocol PresenterToInteractorMainProtocol {
     var mainPresenter: InteractorToPresenterMainProtocol? {get set}
     
-    func showTask()
+    func showTasks()
     func deleteTask()
-    func searchTask()
+    func searchTask(searchText: String)
 }
 
 

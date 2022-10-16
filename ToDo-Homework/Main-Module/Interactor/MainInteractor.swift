@@ -10,17 +10,27 @@ import Foundation
 class MainInteractor: PresenterToInteractorMainProtocol {
     var mainPresenter: InteractorToPresenterMainProtocol?
     
-    func showTask() {
-        mainPresenter?.sendDataToPresenter(tasks: ["Homework","Exercise"])
+    var tasks = ["Homework","Exercise"]
+    
+    func showTasks() {
+        mainPresenter?.sendDataToPresenter(tasks: tasks)
     }
     
     func deleteTask() {
         
     }
     
-    func searchTask() {
+    func searchTask(searchText: String) {
+        
+        for task in tasks {
+            if task.lowercased().contains(searchText.lowercased()) {
+                tasks.append(task)
+            }
+        }
         
     }
+    
+    
     
     
 }

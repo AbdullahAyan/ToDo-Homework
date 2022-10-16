@@ -13,16 +13,16 @@ class MainPresenter: ViewToPresenterMainProtocol {
     var mainView: PresenterToViewMainProtocol?
     var mainInteractor: PresenterToInteractorMainProtocol?
     
-    func showTask() {
-        mainInteractor?.showTask()
+    func showTasks() {
+        mainInteractor?.showTasks()
     }
     
     func deleteTask() {
         mainInteractor?.deleteTask()
     }
     
-    func searchTask() {
-        mainInteractor?.searchTask()
+    func searchTask(searchText: String) {
+        mainInteractor?.searchTask(searchText: searchText)
     }
     
     
